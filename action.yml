@@ -1,0 +1,12 @@
+name: "lint-staged"
+description: "lint-staged github action"
+author: "Rik Hoffbauer"
+inputs:
+    config:
+        description: ".lintstagedrc"
+        required: false
+        default: "{}"
+
+runs:
+    using: "node12"
+    main: "dist/index.js"
